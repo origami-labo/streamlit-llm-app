@@ -30,7 +30,7 @@ def generate_response(input_text, expert_type):
     ]
     
     # LLMにプロンプトを渡して回答を生成
-    result = llm(messages)
+    result = llm.invoke(messages)
     
     # 生成された回答テキストを戻り値として返す
     return result.content
