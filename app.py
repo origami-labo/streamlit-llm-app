@@ -4,7 +4,7 @@ load_dotenv()
 
 import streamlit as st
 from langchain_openai import ChatOpenAI
-from langchain.schema import SystemMessage, HumanMessage
+from langchain_core.messages import SystemMessage, HumanMessage
 from dotenv import load_dotenv
 
 # .envファイルから環境変数（OPENAI_API_KEYなど）を読み込む
